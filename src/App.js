@@ -42,7 +42,7 @@ function App() {
           </ul>
         </nav>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route path="/stack">
@@ -62,7 +62,10 @@ function App() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return <>
+  <h2>Home</h2>
+  <p>This is home</p>
+  </>;
 }
 
 function Stack() {
